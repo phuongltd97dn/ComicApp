@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".screen.content.ContentFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/imgBackContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginStart="@dimen/image_view_back_marginStart"
+        android:layout_marginTop="@dimen/image_view_back_marginTop"
+        android:src="@drawable/ic_back"
+        app:tint="@color/black"
+        tools:ignore="RtlHardcoded" />
+
+</FrameLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "872657451275",
+    "firebase_url": "https://comicapp-c6f4c-default-rtdb.firebaseio.com",
+    "project_id": "comicapp-c6f4c",
+    "storage_bucket": "comicapp-c6f4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872657451275:android:712368f269a3b58bdcca0e",
+        "android_client_info": {
+          "package_name": "com.example.comicapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "872657451275-tg94p5q26ht2i97l8d76nui1lda7j5u4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.comicapp",
+            "certificate_hash": "dbc3b6a7741379d0f76ae8ff5c00af9926ef46e7"
+          }
+        },
+        {
+          "client_id": "872657451275-n7oam19bsti5v0di9htkr5lm6sbmo365.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4NCd4c5GQDHdEKScUoXLEuZOtHnEcD_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "872657451275-n7oam19bsti5v0di9htkr5lm6sbmo365.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

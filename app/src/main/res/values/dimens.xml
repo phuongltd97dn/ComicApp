@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    Because the window insets on round devices are larger than 15dp, this padding only applies
+    to square screens.
+    -->
+    <dimen name="box_inset_layout_padding">0dp</dimen>
+
+    <!--
+    This padding applies to both square and round screens. The total padding between the buttons
+    and the window insets is box_inset_layout_padding (above variable) on square screens and
+    inner_frame_layout_padding (below variable) on round screens.
+    -->
+    <dimen name="inner_frame_layout_padding">5dp</dimen>
+
+    <!--activity_splash.xml-->
+    <dimen name="image_view_logo_width">128dp</dimen>
+    <dimen name="image_view_logo_height">128dp</dimen>
+
+    <!--fragment_detail.xml-->
+    <dimen name="frame_layout_image_detail_height">180dp</dimen>
+    <dimen name="image_view_back_marginStart">8dp</dimen>
+    <dimen name="image_view_back_marginTop">16dp</dimen>
+
+    <!--fragment_detail_info.xml-->
+    <dimen name="linear_layout_detail_info_padding">16dp</dimen>
+    <dimen name="text_view_detail_info_drawablePadding">4dp</dimen>
+    <dimen name="text_view_detail_info_textSize">16sp</dimen>
+    <dimen name="text_view_detail_info_marginStart">8dp</dimen>
+    <dimen name="linear_layout_detail_info_marginTop">4dp</dimen>
+    <dimen name="text_view_detail_info_marginTop">16dp</dimen>
+    <dimen name="text_view_detail_info_tvDescription_marginTop">4dp</dimen>
+    <dimen name="text_view_detail_info_tvDescription_lineSpacingExtra">4dp</dimen>
+
+    <!--fragment_home.xml-->
+    <dimen name="relative_layout_height">60dp</dimen>
+    <dimen name="edit_text_search_text_size">16sp</dimen>
+    <dimen name="edit_text_search_margin_horizontal">80dp</dimen>
+    <dimen name="edit_text_search_margin_vertical">8dp</dimen>
+    <dimen name="recycler_view_rcvListComic_marginTop">16dp</dimen>
+
+    <!--item_comic.xml-->
+    <dimen name="linear_layout_padding">4dp</dimen>
+    <dimen name="card_view_height">180dp</dimen>
+    <dimen name="card_view_elevation">10dp</dimen>
+    <dimen name="card_view_cardCornerRadius">8dp</dimen>
+    <dimen name="text_view_tvChapter_height">30dp</dimen>
+    <dimen name="text_view_tvChapter_textSize">10sp</dimen>
+    <dimen name="text_view_tvName_padding">5dp</dimen>
+    <dimen name="text_view_tvName_textSize">14sp</dimen>
+</resources>

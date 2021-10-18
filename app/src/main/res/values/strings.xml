@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">ComicApp</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!--ListComicByCategoryAdapter.kt-->
+    <string name="text_view_comic_by_category_newest_text">Chapter mới nhất: %1$s</string>
+
+    <!--DetailFragment.kt-->
+    <string name="text_view_tab_0_text">Chi tiết</string>
+    <string name="text_view_tab_1_text">Chapters</string>
+
+    <!--DetailInfoFragment.kt-->
+    <string name="comma">,&#160;</string>
+
+    <!--ComicAdapter.kt-->
+    <!--    <string name="text_view_tvChapter_text">Chapter %1$s</string>-->
+
+    <!--fragment_detail_info.xml-->
+    <string name="text_view_author_label_text">Tác giả:</string>
+    <string name="text_view_status_label_text">Tình trạng:</string>
+    <string name="text_view_description_label_text">Nội dung:</string>
+
+    <!--fragment_home.xml-->
+    <string name="edit_text_search_hint">Tìm truyện&#8230;</string>
+
+    <!--fragment_me.xml-->
+    <string name="text_view_user_username_text">username</string>
+    <string name="button_user_sign_in_text">Đăng nhập</string>
+    <string name="button_user_sign_up_text">Đăng ký</string>
+    <string name="text_view_user_full_name_text">Họ tên</string>
+    <string name="text_view_user_email_text">Email</string>
+    <string name="text_view_user_phone_text">Điện thoại</string>
+
+    <!--fragment_me.xml-->
+    <string name="text_view_sign_in_label_text">ĐĂNG NHẬP</string>
+    <string name="text_view_username_label_text">Tài khoản</string>
+    <string name="text_view_password_label_text">Mật khẩu</string>
+    <string name="button_sign_in_text">Đăng nhập</string>
+
+    <!--menu_bottom_navigation.xml-->
+    <string name="item_home_title">Trang chủ</string>
+    <string name="item_classify_title">Phân loại</string>
+    <string name="item_me_title">Tôi</string>
+</resources>

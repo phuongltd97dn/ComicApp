@@ -15,8 +15,8 @@ import com.example.comicapp.screen.detail.DetailFragment
 import com.example.comicapp.utils.Constant
 import com.example.comicapp.utils.OnItemCategoryClickListener
 import com.example.comicapp.utils.OnItemComicClickListener
+import com.example.comicapp.utils.extensions.hideBottomNavigationView
 import com.example.comicapp.utils.extensions.replaceFragment
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
@@ -49,9 +49,7 @@ class ClassifyFragment : Fragment(), OnItemCategoryClickListener, OnItemComicCli
 
     override fun onItemComicClick(comic: Comic?) {
         replaceFragment(R.id.layoutContainer, DetailFragment.newInstance(comic))
-
-        val bottomNav: BottomNavigationView? = activity?.findViewById(R.id.bottomNavigationMain)
-        bottomNav?.visibility = View.GONE
+        hideBottomNavigationView(activity)
     }
 
     private fun initView(view: View) {

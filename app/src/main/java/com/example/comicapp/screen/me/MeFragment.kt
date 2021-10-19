@@ -14,7 +14,9 @@ import com.example.comicapp.screen.sign_in.SignInFragment
 import com.example.comicapp.screen.sign_in.SignInFragment.Companion.KEY_PASSWORD
 import com.example.comicapp.screen.sign_in.SignInFragment.Companion.KEY_USERNAME
 import com.example.comicapp.screen.sign_in.SignInFragment.Companion.REQUEST_KEY
+import com.example.comicapp.utils.extensions.hideBottomNavigationView
 import com.example.comicapp.utils.extensions.replaceFragment
+import com.example.comicapp.utils.extensions.showBottomNavigationView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.fragment_me.*
 
@@ -72,9 +74,7 @@ class MeFragment : Fragment() {
     private fun onButtonSignInClick() {
         btnUserSignIn.setOnClickListener {
             replaceFragment(R.id.layoutContainer, SignInFragment.newInstance())
-
-            val bottomNav: BottomNavigationView? = activity?.findViewById(R.id.bottomNavigationMain)
-            bottomNav?.visibility = View.GONE
+            hideBottomNavigationView(activity)
         }
     }
 

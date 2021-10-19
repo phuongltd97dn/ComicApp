@@ -9,6 +9,7 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.setFragmentResult
 import com.example.comicapp.R
+import com.example.comicapp.utils.extensions.showBottomNavigationView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.fragment_sign_in.*
 
@@ -50,8 +51,7 @@ class SignInFragment : Fragment() {
             )
 
             activity?.supportFragmentManager?.popBackStack()
-            val bottomNav: BottomNavigationView? = activity?.findViewById(R.id.bottomNavigationMain)
-            bottomNav?.visibility = View.VISIBLE
+            showBottomNavigationView(activity)
         }
     }
 

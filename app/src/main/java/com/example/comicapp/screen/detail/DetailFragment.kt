@@ -13,7 +13,7 @@ import com.bumptech.glide.Glide
 import com.example.comicapp.R
 import com.example.comicapp.data.model.Comic
 import com.example.comicapp.screen.detail.adapter.DetailPagerAdapter
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.example.comicapp.utils.extensions.showBottomNavigationView
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.android.synthetic.main.fragment_detail.*
 import kotlinx.android.synthetic.main.fragment_detail.view.*
@@ -42,9 +42,7 @@ class DetailFragment : Fragment() {
     private fun initView(view: View) {
         view.imgBackDetail.setOnClickListener {
             activity?.supportFragmentManager?.popBackStack()
-
-            val bottomNav: BottomNavigationView? = activity?.findViewById(R.id.bottomNavigationMain)
-            bottomNav?.visibility = View.VISIBLE
+            showBottomNavigationView(activity)
         }
     }
 

@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.comicapp.R
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.example.comicapp.utils.extensions.showBottomNavigationView
 import kotlinx.android.synthetic.main.fragment_setting.*
 
 class SettingFragment : Fragment() {
@@ -26,9 +26,7 @@ class SettingFragment : Fragment() {
 
         imgBackSetting.setOnClickListener {
             activity?.supportFragmentManager?.popBackStack()
-
-            val bottomNav: BottomNavigationView? = activity?.findViewById(R.id.bottomNavigationMain)
-            bottomNav?.visibility = View.VISIBLE
+            showBottomNavigationView(activity)
         }
     }
 

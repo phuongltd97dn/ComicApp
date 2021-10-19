@@ -1,11 +1,11 @@
 package com.example.comicapp.utils.extensions
 
-import android.os.Bundle
+import android.app.Activity
+import android.view.View
 import androidx.annotation.IdRes
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
 import com.example.comicapp.R
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 fun Fragment.replaceFragment(
     @IdRes containerId: Int,
@@ -25,4 +25,14 @@ fun Fragment.replaceFragment(
             .replace(containerId, fragment, tag)
             .commit()
     }
+}
+
+fun Fragment.showBottomNavigationView(activity: Activity?) {
+    val bottomNav: BottomNavigationView? = activity?.findViewById(R.id.bottomNavigationMain)
+    bottomNav?.visibility = View.VISIBLE
+}
+
+fun Fragment.hideBottomNavigationView(activity: Activity?) {
+    val bottomNav: BottomNavigationView? = activity?.findViewById(R.id.bottomNavigationMain)
+    bottomNav?.visibility = View.GONE
 }
